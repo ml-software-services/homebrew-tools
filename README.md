@@ -1,2 +1,2 @@
 # homebrew-tools
-CLI tooling for Mosaic Learning empoyees.
+CLI tooling to make local development a breeze.
