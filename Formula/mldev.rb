@@ -5,7 +5,7 @@
 class Mldev < Formula
   desc "Tools for Mosaic Learning developers and engineers."
   homepage "https://mosaiclearning.com/"
-  version "0.6.9"
+  version "0.6.10"
 
   depends_on "git"
   depends_on "mkcert"
@@ -13,16 +13,16 @@ class Mldev < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ml-software-services/homebrew-tools/releases/download/v0.6.9/mldev_Darwin_x86_64.tar.gz"
-      sha256 "a6d91c1ded5a7400b47245e7c22bdf0c20b58826bc8ea97a0345ffaba5ebce22"
+      url "https://github.com/ml-software-services/homebrew-tools/releases/download/v0.6.10/mldev_Darwin_x86_64.tar.gz"
+      sha256 "add4f3547a2aae1a89fe9d25a043cd68a1839ad5c737f9b9f7659daed7a5f82f"
 
       def install
         bin.install "mldev"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ml-software-services/homebrew-tools/releases/download/v0.6.9/mldev_Darwin_arm64.tar.gz"
-      sha256 "c531ec11cef48e3bbf6f72ec26e2242e4b45744e2db1511414cbe3870a0ae5d1"
+      url "https://github.com/ml-software-services/homebrew-tools/releases/download/v0.6.10/mldev_Darwin_arm64.tar.gz"
+      sha256 "58f1d30829eb237cf62e8368c90a09c80b04d6556a5866f40c53207530bca205"
 
       def install
         bin.install "mldev"
@@ -32,16 +32,16 @@ class Mldev < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/ml-software-services/homebrew-tools/releases/download/v0.6.9/mldev_Linux_x86_64.tar.gz"
-      sha256 "3b9dde7aa87722a9c33a14b66bd6a916873adc23a58f51bf03d446f646d04267"
+      url "https://github.com/ml-software-services/homebrew-tools/releases/download/v0.6.10/mldev_Linux_x86_64.tar.gz"
+      sha256 "4f9b54b4e5b3824b7d1c559d42b01e5861490a990d47e336bb02f7a6c0995007"
 
       def install
         bin.install "mldev"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ml-software-services/homebrew-tools/releases/download/v0.6.9/mldev_Linux_arm64.tar.gz"
-      sha256 "abe7385c289968f8aa94c2a4956154d62ea5bc349658c5acf57240431e7a0ea2"
+      url "https://github.com/ml-software-services/homebrew-tools/releases/download/v0.6.10/mldev_Linux_arm64.tar.gz"
+      sha256 "5987938dd059bed64bc824574a84a6af18b1612a436717c76658f907b005d30e"
 
       def install
         bin.install "mldev"
